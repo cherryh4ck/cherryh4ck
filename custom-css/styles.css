@@ -35,17 +35,17 @@ nav{
 }
 
 .titulo-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 200px;
+    width: 400px;
 }
 
 .titulo-container h1{
+    display: block;
     transition: all 200ms; 
 
+    text-align: center;
     
     background: linear-gradient(
         to right,
@@ -59,6 +59,13 @@ nav{
     -webkit-text-fill-color: transparent;
     background-size: 500% auto;
     animation: textShine 3s ease-in-out infinite alternate, textGlow 2s ease-in-out infinite alternate;
+}
+
+.titulo-container h2{
+    color: rgb(228, 224, 224);
+    text-shadow: 0 0 20px rgb(228, 224, 224);
+    font-size: 24px;
+    text-align: center;
 }
 
 .bloque-container{
@@ -95,6 +102,12 @@ nav{
     color: rgba(83, 81, 81, 0.877);
     font-size: 20px;
     transition: all 200ms;
+}
+
+.footer-logos *:hover{
+    color: rgb(224, 219, 219);
+    filter: drop-shadow(0 0 8px rgb(107, 103, 103));
+    transform: scale(1.2);
 }
 
 /* animaciones */
