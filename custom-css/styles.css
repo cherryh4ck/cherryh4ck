@@ -1,6 +1,118 @@
-body, html{
-    background-image: url(../img/background.png);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+html, body{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(33,33,41,1) 0%, rgba(26,26,36,1) 0%, rgba(19,24,25,1) 50%, rgba(26,26,36,1) 100%, rgba(33,33,64,1) 100%);
+}
+
+header{
+    margin: 0;
+}
+
+nav{
+    width: auto;
+    height: 150px;
+    background: url(../img/header.png);
+}
+
+.gradiente-start{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(360deg,rgba(42, 123, 155, 1) 0%, rgba(255, 255, 255, 0) 0%, rgba(55, 61, 60, 0) 50%, rgba(39, 39, 48, 0.4) 100%);
+    z-index: 1;
+}
+
+.barra, .barra-footer{
+    position: relative;
+    width: 80%;
+    height: 3px;
+    background-color: rgb(77, 74, 74);
+    box-shadow: 5px 1px 35px rgb(121, 118, 118);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -4em;
+    margin-bottom: 1em;
+    z-index: 2;
+    border-radius: 6px;
+}
+
+.titulo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+
+.titulo-container h1{
+    transition: all 200ms; 
+
+    
+    background: linear-gradient(
+        to right,
+        #e97da8 10%,
+        #e283b2 40%,
+        #c16ca0 70%,
+        #d168a2 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 3s ease-in-out infinite alternate, textGlow 2s ease-in-out infinite alternate;
+}
+
+.bloque-container{
+    width: auto;
+    max-width: 600px;
+    height: 200px;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(35, 35, 43, 1) 0%, rgba(30, 30, 32, 1) 100%, rgba(40, 40, 88, 1) 100%);
+    box-shadow: 5px 1px 35px rgb(31, 29, 29);
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* footer */
+
+.barra-footer{
+    width: 30%;
+    margin-top: 2em;
+    margin-bottom: 0em;
+}
+
+.footer-logos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 1em;
+}
+
+.footer-logos *{
+    color: rgba(83, 81, 81, 0.877);
+    font-size: 20px;
+    transition: all 200ms;
+}
+
+/* animaciones */
+
+@keyframes textShine {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+@keyframes textGlow {
+    0% {
+        text-shadow: 0px 0px 25px #e97da8;
+    }
+    100% {
+        text-shadow: 0px 0px 25px #d168a2;
+    }
 }
