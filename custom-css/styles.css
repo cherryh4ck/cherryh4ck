@@ -12,6 +12,10 @@ nav{
     background: url(../img/header.png);
 }
 
+h1, h2{
+    user-select: none;
+}
+
 .gradiente-start{
     position: relative;
     width: 100%;
@@ -61,6 +65,24 @@ nav{
     animation: textShine 3s ease-in-out infinite alternate, textGlow 2s ease-in-out infinite alternate;
 }
 
+#cherry{
+    transition: all 200ms; 
+    
+    background: linear-gradient(
+        to right,
+        #e97da8 10%,
+        #e283b2 40%,
+        #c16ca0 70%,
+        #d168a2 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 3s ease-in-out infinite alternate, textGlow 2s ease-in-out infinite alternate;
+}
+
+
 .titulo-container h2{
     color: rgb(228, 224, 224);
     text-shadow: 0 0 20px rgb(228, 224, 224);
@@ -79,7 +101,38 @@ nav{
     margin-right: auto;
 }
 
+.bloque-container h1{
+    text-align: center;
+    color: rgb(212, 205, 205);
+    text-shadow: 0 0 20px rgb(182, 172, 172);
+    font-size: 24px;
+    padding-top: 0.5em;
+}
+
+.bloque-container p{
+    padding: 1em;
+    color: rgb(209, 203, 203);
+}
+
 /* footer */
+
+footer{
+    text-align: center;
+}
+
+footer p{
+    display: inline-block;
+    color: rgba(83, 81, 81, 0.877);
+    text-shadow: 0 0 12px rgb(85, 81, 81);
+    transition: all 200ms;
+    user-select: none;
+}
+
+footer p:hover{
+    color: rgb(224, 219, 219);
+    text-shadow: 0 0 16px rgb(148, 145, 145);
+    transform: scale(1.1);
+}
 
 .barra-footer{
     width: 30%;
