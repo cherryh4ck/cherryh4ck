@@ -106,7 +106,10 @@ h1, h2{
 .bloques-container{
     width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: transparent;
+    gap: 1em;
     padding: 1em;
 }
 
@@ -117,8 +120,6 @@ h1, h2{
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(35, 35, 43, 1) 0%, rgba(30, 30, 32, 1) 100%, rgba(40, 40, 88, 1) 100%);
     box-shadow: 5px 1px 35px rgb(31, 29, 29);
     border-radius: 8px;
-    margin-left: auto;
-    margin-right: auto;
     text-overflow: clip;
 }
 
@@ -158,26 +159,22 @@ h1, h2{
 
 #html{
     color: #e4ae4a;
+    text-shadow: 0 0 16px #e4ae4a;
 }
 
 #css{
     color: #64a1da;
+    text-shadow: 0 0 16px #64a1da;
 }
 
 #javascript{
     color: #e2d960;
+    text-shadow: 0 0 16px #e2d960;
 }
 
 #php{
     color: #6f6ad8;
-}
-
-#csharp{
-    color: #65c260;
-}
-
-#cplusplus{
-    color: #6eb1c7;
+    text-shadow: 0 0 16px #6f6ad8;
 }
 
 .bloque-container-imagenes{
@@ -309,4 +306,10 @@ footer p:hover{
     100% {
         text-shadow: 0px 0px 25px #b3afaf;
     }
+}
+
+/* responsive */
+
+@media (min-width: 600px){
+
 }
