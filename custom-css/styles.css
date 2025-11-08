@@ -121,6 +121,14 @@ h1, h2{
     box-shadow: 5px 1px 35px rgb(31, 29, 29);
     border-radius: 8px;
     text-overflow: clip;
+    transition: all 200ms;
+}
+
+.bloque-container:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 40px rgb(44, 43, 43);
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 .bloque-container h1{
@@ -147,7 +155,7 @@ h1, h2{
 .bloque-container-habilidades p{
     margin-left: auto;
     margin-right: auto;
-    max-width: 200px;
+    max-width: 250px;
 }
 
 .bloque-container-habilidades i{
@@ -168,13 +176,13 @@ h1, h2{
 }
 
 #javascript{
-    color: #e2d960;
-    text-shadow: 0 0 16px #e2d960;
+    color: #e2db70;
+    text-shadow: 0 0 16px #e2db70;
 }
 
 #php{
-    color: #6f6ad8;
-    text-shadow: 0 0 16px #6f6ad8;
+    color: #7a75d3;
+    text-shadow: 0 0 16px #7a75d3;
 }
 
 .bloque-container-imagenes{
@@ -310,6 +318,12 @@ footer p:hover{
 
 /* responsive */
 
-@media (min-width: 600px){
+@media (max-width: 900px){
+    .bloques-container{
+        flex-direction: column;
+    }
 
+    .bloque-container{
+        width: 80%;
+    }
 }
