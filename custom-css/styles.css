@@ -262,6 +262,13 @@ footer p:hover{
     width: 30%;
     margin-top: 2em;
     margin-bottom: 0em;
+    transition: all 200ms;
+}
+
+.barra-footer-hover{
+    width: 25% !important;
+    background-color: rgb(146, 141, 141) !important;
+    box-shadow: 5px 1px 35px rgb(219, 216, 216) !important;
 }
 
 .footer-logos{
