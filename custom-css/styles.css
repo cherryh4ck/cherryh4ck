@@ -238,6 +238,37 @@ h1, h2{
     animation: textShine 2s ease-in-out infinite alternate, textGlow2 2s ease-in-out infinite alternate;
 }
 
+/* bloque mis habilidades */
+
+.bloque-mishabilidades:hover .bloque-container-habilidades i{
+    color: rgb(207, 201, 201);
+    filter: drop-shadow(0 0 8px rgb(107, 103, 103));
+    transform: scale(1.1);
+}
+
+/* mis proyectos */
+
+#tachibana{
+    color: #a3e485;
+    text-shadow: 0 0 16px #93ce78;
+}
+
+#cs2-website{
+    color: #e7ae79;
+    text-shadow: 0 0 16px #cf9966;
+}
+
+.bloque-proyecto{
+    width: 320px !important;
+}
+
+.bloque-proyecto:hover{
+    transform: scale(1) translateY(-15px);
+    box-shadow: 0 0 40px rgb(44, 43, 43);
+    margin-left: 0;
+    margin-right: 0;
+}
+
 /* footer */
 
 footer{
