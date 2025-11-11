@@ -95,7 +95,6 @@ h1, h2{
     animation: textShine 3s ease-in-out infinite alternate, textGlow 2s ease-in-out infinite alternate;
 }
 
-
 .titulo-container h2{
     color: rgb(228, 224, 224);
     text-shadow: 0 0 20px rgb(228, 224, 224);
@@ -254,20 +253,59 @@ h1, h2{
 }
 
 #cs2-website{
-    color: #e7ae79;
-    text-shadow: 0 0 16px #cf9966;
+    color: #e7d779;
+    text-shadow: 0 0 16px #d4c56e;
+}
+
+#fourchan{
+    transition: all 200ms; 
+    
+    background: linear-gradient(
+        to right,
+        #98e165 10%,   
+        #7fc97f 40%,   
+        #b5d19c 70%,   
+        #70d670 100%   
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 3s ease-in-out infinite alternate, textGlow3 2s ease-in-out infinite alternate;
 }
 
 .bloque-proyecto{
     width: 320px !important;
+    position: relative;
 }
 
-.bloque-proyecto:hover{
-    transform: scale(1) translateY(-15px);
+.bloque-proyecto a{
+    text-align: center;
+    text-decoration: none;
+}
+
+.bloque-proyecto a i{
+    display: block;
+    color: rgba(83, 81, 81, 0.877);
+    padding: 0 5px;
+    font-size: 20px;
+    transition: all 200ms;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bloque-proyecto a i:hover{
+    color: rgb(207, 201, 201);
+    filter: drop-shadow(0 0 8px rgb(107, 103, 103));
+    transform: scale(1.2);
+}
+
+.bloque-proyecto-wrapper:hover .bloque-proyecto{
+    transform: scale(1) translateY(-10px);
     box-shadow: 0 0 40px rgb(44, 43, 43);
     margin-left: 0;
     margin-right: 0;
-}
+}   
 
 /* footer */
 
@@ -351,6 +389,15 @@ footer p:hover{
     }
     100% {
         text-shadow: 0px 0px 25px #b3afaf;
+    }
+}
+
+@keyframes textGlow3 {
+    0% {
+        text-shadow: 0px 0px 25px #98e165;
+    }
+    100% {
+        text-shadow: 0px 0px 25px #70d670;
     }
 }
 
