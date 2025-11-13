@@ -274,6 +274,23 @@ h1, h2{
     animation: textShine 3s ease-in-out infinite alternate, textGlow3 2s ease-in-out infinite alternate;
 }
 
+#cs2-glow{
+    transition: all 200ms; 
+    
+    background: linear-gradient(
+        to right,
+        #e7d779 10%,   
+        #e6d058 40%,   
+        #ddc749 70%,   
+        #bbaa47 100%   
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 3s ease-in-out infinite alternate, textGlow4 2s ease-in-out infinite alternate;
+}
+
 .bloque-proyecto{
     width: 320px !important;
     position: relative;
@@ -363,7 +380,7 @@ footer p:hover{
     transform: scale(1.2);
 }
 
-/* animaciones */
+/* animaciones de texto */
 
 @keyframes textShine {
     0% {
@@ -401,6 +418,191 @@ footer p:hover{
     }
 }
 
+@keyframes textGlow4 {
+    0% {
+        text-shadow: 0px 0px 25px #e7d779;
+    }
+    100% {
+        text-shadow: 0px 0px 25px #bbaa47;
+    }
+}
+
+/* animaciones de bloques */
+
+.titulo-animado {
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: aparecer-desde-arriba 1.2s cubic-bezier(0.25, 0.1, 0.25, 1.0) forwards;
+}
+
+@keyframes aparecer-desde-arriba {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+        filter: blur(3px);
+    }
+    60% {
+        opacity: 1;
+        transform: translateY(5px); 
+        filter: blur(2px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+}
+
+.bloque-animado {
+    animation: aparecer-bloque 1s cubic-bezier(0.25, 0.1, 0.25, 1.0) forwards;
+    animation-fill-mode: none
+}
+
+.bloque-animado2{
+    animation: aparecer-bloque 1.4s cubic-bezier(0.25, 0.1, 0.25, 1.0) forwards;
+    animation-fill-mode: none
+}
+
+.bloque-animado3{
+    animation: aparecer-bloque 1.8s cubic-bezier(0.25, 0.1, 0.25, 1.0) forwards;
+    animation-fill-mode: none
+}
+
+@keyframes aparecer-bloque {
+    0% {
+        opacity: 0;
+        transform: translateY(-25px);
+        filter: blur(1px);
+    }
+    60% {
+        opacity: 1;
+        transform: translateY(3px);
+        filter: blur(0.5px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+}
+
+.titulo-animado-abajo {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: aparecer-desde-abajo 1.2s cubic-bezier(0.25, 0.1, 0.25, 1.0) forwards;
+}
+
+@keyframes aparecer-desde-abajo {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+        filter: blur(1px);
+    }
+    60% {
+        opacity: 1;
+        transform: translateY(-5px);
+        filter: blur(0.5px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+}
+
+.bloque-animado-abajo {
+    animation: aparecer-bloque-abajo 1s cubic-bezier(0.25, 0.1, 0.25, 1.0) forwards;
+    animation-fill-mode: none
+}
+
+.bloque-animado-abajo2 {
+    animation: aparecer-bloque-abajo 1.4s cubic-bezier(0.25, 0.1, 0.25, 1.0) forwards;
+    animation-fill-mode: none
+}
+
+@keyframes aparecer-bloque-abajo {
+    0% {
+        opacity: 0;
+        transform: translateY(25px);
+        filter: blur(4px);
+    }
+    60% {
+        opacity: 1;
+        transform: translateY(-3px);
+        filter: blur(1px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+}
+
+/* animacion footer */
+
+.barra-footer-animada{
+    animation: barra-footer-animacion 1.5s cubic-bezier(0.25, 0.1, 0.25, 1.0) forwards;
+    animation-fill-mode: none
+}
+
+@keyframes barra-footer-animacion {
+    0% {
+        width: 0%;
+        box-shadow: none;
+    }
+    100% {
+        width: 30%;
+        box-shadow: 5px 1px 35px rgb(121, 118, 118);
+    }
+}
+
+.footer-texto-animado {
+    opacity: 0;
+    transform: translateY(10px);
+    animation: aparecer-footer 1.2s cubic-bezier(0.25, 0.1, 0.25, 1.0) forwards;
+    animation-delay: 0.3s; /* opcional: sincroniza con la animación de la línea */
+}
+
+@keyframes aparecer-footer {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+        filter: blur(3px);
+    }
+    70% {
+        opacity: 1;
+        transform: translateY(-2px);
+        filter: blur(1px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+}
+
+.footer-icono-animado {
+    animation: aparecer-icono-suave 1s cubic-bezier(0.25, 0.1, 0.25, 1.0) forwards;
+}
+
+@keyframes aparecer-icono-suave {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+        filter: blur(3px);
+    }
+    70% {
+        opacity: 1;
+        transform: translateY(-2px);
+        filter: blur(1px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+}
+
 /* responsive */
 
 @media (max-width: 900px){
@@ -410,5 +612,9 @@ footer p:hover{
 
     .bloque-container{
         width: 80%;
+    }
+
+    .titulo-container h2{
+        font-size: 20px;
     }
 }
