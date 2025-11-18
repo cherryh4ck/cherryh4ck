@@ -380,6 +380,23 @@ footer p:hover{
     transform: scale(1.2);
 }
 
+/* animacion header */
+.barra-header-animada{
+    animation: barra-header-animacion 2.5s cubic-bezier(0.25, 0.1, 0.25, 1.0) forwards;
+    animation-fill-mode: none
+}
+
+@keyframes barra-header-animacion {
+    0% {
+        width: 0%;
+        box-shadow: none;
+    }
+    100% {
+        width: 80%;
+        box-shadow: 5px 1px 35px rgb(121, 118, 118);
+    }
+}
+
 /* animaciones de texto */
 
 @keyframes textShine {
